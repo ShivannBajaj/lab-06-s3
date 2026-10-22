@@ -1,3 +1,9 @@
+## My S3 buckets
+- Public index page: https://public-peg5tx.s3.amazonaws.com/index.html
+- Presigned secret book URL: https://secret-peg5tx.s3.amazonaws.com/pg11.txt?AWSAccessKeyId=ASIA4PIUQ4VLB4LZYC7B&Signature=0WfHcGqlqheW5FxFoOyuP5%2FbUek%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEKP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDBYbiWZCMYl7lHqHyzs4nqrw2e3qcroVmVCcVrpos2egIhAMBh5AdiRrcS%2B6qxHpdmBkHB0VsbZaz%2BYDFmBiBtHDKcKq0CCGwQARoMODU3NDI1ODk2NzkwIgy4GoxVoYWgVeICAIsqigK2YHSQ30G2Ktr8L5MLWhXWZeBJmQXHxOIcRLHixLMnFs1TBGdhpp6bG74vEOtk2XV5T6vQ%2FuJ5pdsUKLlaosWL7r7tnn9pzlMqqBdR78Z%2FQVdUiXvlajWd2UQR0bWb7CFEK2uL%2FGYQwd1vYCEGALA3Loz6msgtbTi3IvjwWssb%2BkDnvStIuc4HEmRB02inPrZOtcF1jqvdAdnL9TonaYYVoy8MzHrryIlm115KT8KeoNOXenil%2Fp%2FTOgOq46zAOQTAiQp5%2FodR%2BFwGJnbwKn0d0vea6D6xSnnTJ%2FGAcigVrI2biesTs1WqeV2edzFpM4VdjxwMwqrbcUlTvddj6PKx4gjUA3eeCrnEljCW%2FuXWBjqcAUIIuunbZ7buz%2F4DSEhMOITKXa0Yqud9sLh69G3gUsDbeIMGmiIAt03ZtaS1s1ztIRQpr3FrLW3x1af5MJBHrZrbAQfd%2BOBsVuvOxZ4JzghuIGyxVH6oaKpYpHq7O6ZXCS4TFXgcZdNLm%2BRze6cpl%2Flq5fvTDeTdwUSJYXMMNWYbLtocgmsab0E0mvfGR7EM5WuCRDOtqEY2TdcG0Q%3D%3D&Expires=1793245736 
+
+A public bucket is ideal for hosting static web assets or content intended for open, unauthenticated public access (like the Project Gutenberg book index). In contrast, a presigned URL is chosen when files must remain private by default, but you need to grant temporary, time-limited access to specific users without altering bucket-level permissions.
+
 # Lab 06: Working with S3 Storage
 
 The goal of this lab is to get you comfortable with **Amazon S3** object storage, building on what you have learned about the command line, AWS accounts, and scripting. You will stage a collection of 100 books from [Project Gutenberg](https://www.gutenberg.org/) in a **public** bucket that anyone can browse in a web browser, and share a single book from a **private** bucket with a time-limited presigned URL.
